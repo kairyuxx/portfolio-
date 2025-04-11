@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #00ffee;
+}
+
+
+
+
+html{
+    font-size: 60%;
+    overflow: hidden;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 12% 4rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    z-index: 5;
+}
+
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo span{
+    text-shadow: 0 0 25px var(--main-color);
+}
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    position: relative;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+    transform: translateY(-3px);
+    text-shadow: 0 0 10px var(--main-color);
+    box-shadow: 0 4px 15px rgba(0, 255, 238, 0.3); 
+    border-radius: 5px;
+    padding: 0.5rem 1rem; 
+    background-color: rgba(0, 255, 238, 0.05); 
+}
+
+.home img{
+    border-radius: 50%;  
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    position: relative;
+    
+    
+ }
+ .home-img img {
+    position: relative;
+    width: 500px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 0 20px transparent;
+}
+
+.home-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+}
+.home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+ .home-content {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    padding: 5rem 12%;
+    height: 100vh;
+    width: 100%;
+}
+
+.home-text {
+    max-width: 600px;
+}
+
+.home-text h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.home-text h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.home-text p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #ccc;
+}
